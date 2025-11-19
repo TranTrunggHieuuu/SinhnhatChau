@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Chúc mừng sinh nhật!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 40px;
+        color: #fff;
+        text-shadow: 2px 2px 5px #00000065;
+    }
+    button {
+        margin: 10px;
+        padding: 15px 25px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: #ff6f91;
+        color: white;
+        transition: 0.3s;
+    }
+    button:hover {
+        transform: scale(1.1);
+        background-color: #ff3b6f;
+    }
+     #avatar {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 0 20px #ffffffaa;
+        margin-bottom: 20px;
+    }
+    #message {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #fff;
+        min-height: 40px;
+    }
+</style>
+</head>
+<body>
+
+<h1>🎂 Hôm nay là ngày tiên nữ hạ phàm! 🎉</h1>
+
+<!-- Ảnh bạn của bạn -->
+<img id="avatar" src="./images/abc.JPG" alt="Hình bạn của bạn">
+
+<button onclick="showMessage('Chúc bạn Châu sinh nhật vui vẻ! 🎈')">🎈 Lời chúc 1</button>
+<button onclick="showMessage('Chúc bạn Châu tuổi mới thật nhiều tiền! 💖')">💖 Lời chúc 2</button>
+<button onclick="showMessage('Chúc bạn Châu luôn xinh đẹp cười nhiều và hạnh phúc nhé! 😄')">😄 Lời chúc 3</button>
+
+<!-- 🎯 THÊM DÒNG NÀY -->
+<div id="message"></div>
+
+<script>
+function showMessage(text) {
+    document.getElementById("message").innerHTML = text;
+}
+</script>
+
+</body>
+</html>
