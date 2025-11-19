@@ -1,0 +1,5 @@
+# Ví dụ về phần gems trong _config.yml
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-github-metadata # Đảm bảo gem này có ở đây nếu theme cần
